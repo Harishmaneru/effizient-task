@@ -52,7 +52,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       setIsSubmitting(true);
-      const response = await fetch("http://localhost:3001/postUser", {
+      const response = await fetch("https://effizient-task.vercel.app/postUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
