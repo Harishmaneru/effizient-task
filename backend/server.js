@@ -8,7 +8,7 @@ const app = express();
 // Use cors middleware with specific options
 app.use(
   cors({
-    origin: ["https://effizient-task-do47.vercel.app"],
+    origin: ["https://effizient-task-do47-h6je16b9a-harishmaneru.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
