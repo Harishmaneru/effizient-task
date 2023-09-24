@@ -1,19 +1,20 @@
-import express, { json } from "express";
+import express from "express";
 import cors from "cors";
 import { MongoClient, ServerApiVersion } from "mongodb";
 import nodemailer from "nodemailer";
 
 const app = express();
 
-app.use(cors(
-  {
-  origin:["https://effizient-task-do47.vercel.app"],
-  methods:["POST", "GET"],
-  credentials:true
-  }
-  ));
-app.use(json());
-app.use(cors());
+// Use cors middleware with specific options
+app.use(
+  cors({
+    origin: ["https://effizient-task-do47.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
+
+app.use(express.json());
 
 const uri =
   "mongodb+srv://harishmaneru:tjQVVQZzCRzyEhXV@cluster0.o28gldp.mongodb.net/?retryWrites=true&w=majority";
