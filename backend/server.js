@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors(
   {
-  origin:["https://effizient-assiginment.vercel.app"],
+  origin:["https://effizient-task-do47.vercel.app"],
   methods:["POST", "GET"],
   credentials:true
   }
